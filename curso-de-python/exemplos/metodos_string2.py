@@ -1,0 +1,13 @@
+nome = input("Digite seu nome: ")
+
+print("isalpha", nome.isalpha())
+print("isdecimal", nome.isdecimal())
+print("isdigit", nome.isdigit())
+print("isnumeric", nome.isnumeric())
+print("islower = ",nome.islower())
+print("lower = ",nome.lower())
+print("isupper = ",nome.isupper())
+print("upper = ",nome.upper())
+print("istitle = ",nome.istitle())
+print("title = ",nome.title())
+print("isspace = ",nome.isspace())

@@ -1,0 +1,11 @@
+from xml.etree.ElementTree import Element, ElementTree
+root = Element("Elementos")
+fogo = Element("Fogo", cor="Vermelho", temperatura="Quente")
+terra = Element("Terra")
+agua = Element("Agua")
+ar = Element("Ar")
+root.append(fogo)
+root.append(terra)
+root.append(agua)
+root.append(ar)
+ElementTree(root).write("elementos.xml")

@@ -1,0 +1,72 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function pulaLinha(){
+
+		document.write("<br><br>");
+	
+	}
+
+	function mostra(frase){
+
+		document.write(frase);
+		pulaLinha();
+
+	}
+
+	function bhaskaraX1(valorA, valorB, valorC){
+
+		var calculo = Math.round(valorB * valorB);
+		var calculo2 = Math.round(-4 * valorA * valorC); 
+		var somaCalculoCalculo2 = calculo + calculo2;
+   		var calculo3 = Math.round((valorB + somaCalculoCalculo2) / 2);
+		return calculo3;
+
+	}
+
+	function bhaskaraX2(valorA, valorB, valorC){
+
+		var calculo = Math.round(valorB * valorB);
+		var calculo2 = Math.round(-4 * valorA * valorC); 
+		var somaCalculoCalculo2 = calculo + calculo2;
+   		var calculo3 = (valorB - somaCalculoCalculo2) / 2;
+		return calculo3;
+
+	}
+
+	function equacao(bhaskara2, valorBInformado){
+
+		var calculo = Math.round(bhaskara2 * bhaskara2);
+		var calculo1 = Math.round(valorBInformado * bhaskara2);
+		var fim1 = calculo +" "  + calculo1;
+		return fim1;
+	}
+
+	function equaca1(bhaskara1, valorBInformado){
+
+		var calculo = Math.round(bhaskara1 * bhaskara1);
+		var calculo1 = Math.round(valorBInformado * bhaskara1);
+		var fim1 = calculo +" "  + calculo1;
+		return fim1;
+	}
+		
+	var valorAInformado = parseInt(prompt("Qual o valor de A?"));
+	var valorBInformado = parseInt(prompt("Qual o valor de B?"));
+	var valorCInformado = parseInt(prompt("Qual o valor de C?"));
+	var bhaskara1 = bhaskaraX1(valorAInformado, valorBInformado, valorCInformado);   
+	var bhaskara2  = bhaskaraX2(valorAInformado, valorBInformado, valorCInformado);
+	var fim = equacao(bhaskara2, valorBInformado);
+	var fim1 = equaca1(bhaskara1, valorBInformado);
+	
+	mostra("S = " + "{ " + bhaskara1 + ", " + bhaskara2 + " }");
+	mostra("{ " + bhaskara1 + " }" + " :");
+	mostra(fim1 + "  " + valorCInformado + " = "+ "0")	
+	mostra("{ " + bhaskara2 + " }" + " :");
+	mostra(fim + "  " + valorCInformado + " = "+ "0");
+	
+	mostra("FIM!")
+	
+	
+
+	</script>
